@@ -25,9 +25,9 @@ function GetAllCommentsFromUserId($userId)
       . "ORDER BY comment.created_at ASC"
   );
   return $response->fetchAll();
-}
+};
 
-      function GetAllCommentsFromPostId($postId)
+function GetAllCommentsFromPostId($postId)
 {
   global $PDO;
   $response = $PDO->query(
@@ -37,4 +37,5 @@ function GetAllCommentsFromUserId($userId)
       . "ORDER BY comment.created_at ASC"
   );
   return $response->fetchAll();
-}
+  };
+
